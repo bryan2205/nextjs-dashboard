@@ -2,7 +2,8 @@
   "private": true,
   "scripts": {
     "build": "next build",
-    "dev": "next dev --turbopack",
+    "dev:turbopack": "next dev --turbopack",
+    "dev": "next dev",
     "start": "next start"
   },
   "dependencies": {
@@ -13,7 +14,8 @@
     "bcrypt": "^5.1.1",
     "clsx": "^2.1.1",
     "next": "latest",
-    "next-auth": "5.0.0-beta.25",
+    "next-auth": "^5.0.0-beta.25",
+    "pg": "npm:@neondatabase/serverless@^1.0.0",
     "postcss": "8.5.1",
     "postgres": "^3.4.5",
     "react": "latest",
@@ -21,8 +23,7 @@
     "tailwindcss": "3.4.17",
     "typescript": "5.7.3",
     "use-debounce": "^10.0.4",
-    "zod": "^3.24.1",
-    "pg": "npm:@neondatabase/serverless@^1.0.0"
+    "zod": "^3.24.1"
   },
   "overrides": {
     "pg": "npm:@neondatabase/serverless@^1.0.0"
